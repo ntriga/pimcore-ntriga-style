@@ -1,0 +1,42 @@
+{
+    "name": "ntriga/pimcore-ntriga-style",
+    "version": "11.0.0",
+    "description": "Put Pimcore in the Ntriga style",
+    "keywords": [
+        "ntriga",
+        "pimcore"
+    ],
+    "homepage": "https://github.com/ntriga/pimcore-ntriga-style",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joey Daems",
+            "email": "joey@ntriga.agency",
+            "role": "Developer"
+        },
+        {
+            "name": "Vincent Bibauw",
+            "email": "vincent@ntriga.agency",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "pimcore/pimcore": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ntriga\\PimcoreStyle\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
